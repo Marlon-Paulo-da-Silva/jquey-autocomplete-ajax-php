@@ -1,8 +1,9 @@
 <?php 
   if (isset($_POST['search'])){
     $con = new mysqli('localhost','root','','jquery-autocomplete');
-
+    $q = htmlentities($_POST['q']);
     
+
     $response = "Sem dados encontrados";
 
     exit( $response);
@@ -10,7 +11,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
