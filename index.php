@@ -41,6 +41,11 @@
     input, ul {
       width: 250px;
     }
+
+    li:hover {
+      color: silver;
+      background: #0088cc;
+    }
   </style>
 </head>
 <body>
