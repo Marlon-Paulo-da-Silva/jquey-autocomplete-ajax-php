@@ -71,7 +71,13 @@
           );
         }
         
-      })
+      });
+
+      $(document).on('click', 'li' , function(){
+        var country = $(this).text();
+        $("#searchBox").val(country);
+        $("#response").html("");
+      });
     });
   </script>
 </body>
